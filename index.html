@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+    <header>
+        <div class="top_bar">
+            <h2 class="fancy">Tic-Tac-Toe</h2>
+            <i id="theme" class="fa-solid fa-palette fa-2xl"></i>
+        </div>
+    </header>
+    <div class="main">
+        <div class="info flex-col">
+            <h1>Welcome to <span class="fancy">Tic-Tac-Toe</span></h1>
+            <p>Its <span>X</span>'s Turn</p>
+            <button type="reset" id="rst" class="reset">Reset</button>
+        </div>
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="boxText"></span></div>
+            <div class="box bt-0"><span class="boxText"></span></div>
+            <div class="box bt-0 br-0"><span class="boxText"></span></div>
+            <div class="box bl-0"><span class="boxText"></span></div>
+            <div class="box"><span class="boxText"></span></div>
+            <div class="box br-0"><span class="boxText"></span></div>
+            <div class="box bl-0 bb-0"><span class="boxText"></span></div>
+            <div class="box bb-0"><span class="boxText"></span></div>
+            <div class="box bb-0 br-0"><span class="boxText"></span></div>
+        </div>
+    </div>
+    <audio id="audio">
+        <source src="/music/sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gamewin">
+        <source src="/music/gameWin.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+<script src="script-ai.js"></script>
+<script src="https://kit.fontawesome.com/25c66c8381.js" crossorigin="anonymous"></script>
+<!-- <script src="script2.js"></script> -->
+<!-- <script src="script.js"></script> -->
+
+</html>
+
+<!-- fa-solid  -->
+<!-- fa-xmark -->
