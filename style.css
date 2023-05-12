@@ -12,6 +12,7 @@
 body{
   height: 100vh;
   color-scheme: light dark;
+  background-color: rgb(32, 106, 128)
 }
 
 #theme{
@@ -19,20 +20,21 @@ body{
 }
 
 .top_bar {
-  background-color: white;
-  /* background-color: rgb(0, 56, 89); */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
   padding: 0 8vh;
 }
+.top_bar h2{
+  font-size: 2rem;
+}
 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 94.27%;
-  background-color: rgba(7, 102, 75, 0.78);
+  /* background-color: rgba(7, 102, 75, 0.78); */
 }
 
 .container {
@@ -57,13 +59,13 @@ body{
 .info h1{
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 3rem;
+  font-size: 5vh;
 font-weight: inherit;
 }
 
 @media (max-width:600px){
   .main{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .container {
     grid-template-columns: repeat(3, 1fr); 
@@ -71,6 +73,9 @@ font-weight: inherit;
   }
   .box{
     width: 100%;
+  }
+  .hide_phone{
+    display: none;
   }
 }
 .boxText{

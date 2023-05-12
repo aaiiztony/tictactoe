@@ -13,7 +13,8 @@ theme.addEventListener("click", ()=>{
   let b = Math.floor(Math.random() * 255);
   let a = Math.floor(Math.random() * 255);
   let randomColor = `rgba(${r}, ${g}, ${b}, ${a})`;
-  document.querySelector(".main").style.background = randomColor;
+  document.body.style.background = randomColor;
+  // document.querySelector(".main").style.background = randomColor;
 
 })
  
